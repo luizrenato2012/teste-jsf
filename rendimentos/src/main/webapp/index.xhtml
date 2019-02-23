@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>Rendimentos</title>
+	<h:outputStylesheet library="css" name="style.css"/>
+</h:head>
+
+<h:body>
+	<h:form>
+		<h2>Teste</h2>
+		<h:panelGrid columns="2">
+			<h:outputLabel>CPF</h:outputLabel>
+			<h:inputText value="#{rendimentoBean.beneficiario.cpf}" class="entrada"/>
+			<h:outputLabel>Matricula</h:outputLabel>
+			<h:inputText value="#{rendimentoBean.beneficiario.matricula}" class="entrada"/>
+		</h:panelGrid>
+		<h:commandButton action="#{rendimentoBean.consulta()}" value="Consulta"/>
+		<h:commandButton action="#{rendimentoBean.limpa()}" value="Limpa"/>
+	</h:form>
+</h:body>
+</html>

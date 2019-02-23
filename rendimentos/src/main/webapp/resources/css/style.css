@@ -1,0 +1,14 @@
+body {
+	font-family: Arial;
+}
+
+input {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	
+}
+
+imput[type=submit] {
+	margin-left: 30px;
+	margin-right: 30px;
+}
